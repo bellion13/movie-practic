@@ -1,0 +1,29 @@
+@use '../../scss/' as *;
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: $main-color;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    @include mobile {
+       margin-bottom: 35px;
+    }
+}
+
+.scroll-to-top:hover {
+    transition: all 0.5s ease;
+    background-color: hsla(0, 100%, 50%, 0.850);
+    color: white;
+}
